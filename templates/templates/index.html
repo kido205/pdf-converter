@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PDF Converter - Convert PDFs Easily</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+<body>
+      <div class="container">
+                <div class="header">
+                              <h1>📄 PDF Converter</h1>
+                            <p>Convert PDF to Images, PDF to Text, or Image to PDF</p>
+                </div>div>
+      
+              <div class="card">
+                          <form id="convertForm" enctype="multipart/form-data">
+                                          <!-- File Upload -->
+                                          <div class="form-group">
+                                                              <label for="fileInput">Choose File:</label>label>
+                                                              <input type="file" id="fileInput" name="file" required accept=".pdf,.jpg,.jpeg,.png">
+                                                              <p class="help-text">Accepted: PDF, JPG, PNG (Max 50MB)</p>
+                                          </div>div>
+                          
+                                          <!-- Conversion Type -->
+                                          <div class="form-group">
+                                                              <label for="conversionType">What do you want to convert?</label>label>
+                                                              <select id="conversionType" name="type" required>
+                                                                                      <option value="">-- Select Conversion Type --</option>option>
+                                                                                      <option value="pdf_to_image">PDF → Image (PNG)</option>option>
+                                                                                      <option value="pdf_to_text">PDF → Text</option>option>
+                                                                                      <option value="image_to_pdf">Image → PDF</option>option>
+                                                              </select>select>
+                                          </div>div>
+                          
+                                          <!-- Convert Button -->
+                                          <button type="submit" class="btn-primary">🚀 Convert File</button>button>
+                          </form>form>
+              
+                          <!-- Status Message -->
+                          <div id="status" class="status"></div>div>
+              
+                          <!-- Loading Spinner -->
+                          <div id="loader" class="loader hidden"></div>div>
+              </div>div>
+      
+              <div class="info-section">
+                          <h2>How it works:</h2>
+                          <ol>
+                                            <li>Select a file from your computer</li>
+                                          <li>Choose what you want to convert</li>
+                                          <li>Click "Convert File"</li>
+                                          <li>Download your converted file!</li>
+                          </ol>
+              </div>div>
+      </div>div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>html></li></li>
+                          </ol></p></h1>
+</body></title>
+  </head>
